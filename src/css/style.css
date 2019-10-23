@@ -1,0 +1,685 @@
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 32px 32px;
+  }
+  .lds-roller div:after {
+    background: #52a2a9 !important;
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: -3px 0 0 -3px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 50px;
+    left: 50px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 54px;
+    left: 45px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 57px;
+    left: 39px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 58px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 57px;
+    left: 25px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 54px;
+    left: 19px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 50px;
+    left: 14px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 45px;
+    left: 10px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.backgroundSearch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    position: fixed;
+    bottom: 4em;
+    left: 0;
+    right: 0;
+    width: 18em;
+    border: none;
+    margin: auto;
+    text-align: center;
+    padding: 1em 3em;
+    animation-name: example;
+    animation-duration: 1.5s;
+    background-color: #292727;
+    color: #fff;
+    border-radius: 4px;
+    z-index: 9999;
+    animation-name: example;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes example {
+    from {bottom: -10em}
+    to {background-color:4em;}
+  }
+  
+  /* Standard syntax */
+  @keyframes example {
+    from {bottom: -10em}
+    to {background-color:4em;}
+  }
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(25, 24, 24, 0.9);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background .box{
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 0px #ffffff;
+    margin: 1em;
+}
+.background .box .select{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background .box .select button{
+    width: 50%;
+    padding: 0.3em;
+    margin: 1em;
+    border: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+.form{
+    direction: rtl;
+    border: 1px solid #bdbdbd;
+    font-size: 1em;
+    padding: 2em;
+    margin: 1.8em 0;
+    position: relative;
+    border-radius: 15px;
+}
+.form .header{
+    position: absolute;
+    top: -1.5em;
+    padding: 0;
+    margin: 0;
+    /* left: 0; */
+    right: 4em;
+
+}
+.form .header h3{
+    display: inline-block;
+    padding: 0.5em;
+    border: none;
+    background-color: #52a2a9 !important;
+    border-radius: 4px;
+    font-size: 1.5em;
+}
+.form .field{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center 
+}
+.form .field .value.list p{
+    padding: 0.5em 1em;
+    margin: 0.5em 1em;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #c7c4c4;
+    border-radius: 4px;
+    direction: ltr;
+}
+.form .field .value.list span{
+    border: none;
+    font-size:0.5em ;
+    padding: 0.5em;
+    background-color: #8e8d8d;
+    border-radius: 5px
+}
+.form .field .notification{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    color: #a5a0a0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.form .field .notification label big{
+    font-size: 1.5em;
+    margin: 0 0.1em;
+}
+.form .field .login_field i{
+    position: absolute;
+    font-size: 1.5em;
+    top: 0.3em;
+    right: 0.7em;
+    background-color: rgba(134, 134, 134, 0.3);
+    height:1.7em;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0.09em 0;
+    border-radius: 2px;
+}
+.form .titr label{
+font-size: 1.5em 
+}
+.form .field.name .searchname{
+    padding: 0.5em 1em;
+    margin: 0 1em 0.5em 0;
+    border: 1px solid #eeeeee;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 3em;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    z-index: 999;
+}
+
+.form .field.name .name{
+    display: flex;
+    direction: rtl;
+    text-align: right;
+    padding: 0.4em;
+}
+.form .field.name .name label{
+    cursor: pointer;
+}
+.form .field.name .name span{
+    padding: 0 0.5em;
+    color: #a2a2a2;
+}
+.form .field .label{
+    text-align: right;
+    font-size: 1em;
+    /* width: 7em */
+}
+.form .field .value .location{
+    top: 1em;
+    left: -0.5em;
+    color: #5d5b5b;
+}
+.form label .desired input::placeholder{
+    font-size: 0.7em;
+    color: #000;
+    font-weight: bolder
+}
+.form  .name_field{
+    padding: 0.5em 1em;
+    margin: 0.5em 1em;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #c7c4c4;
+    border-radius: 4px;
+    display: inline-block;
+}
+.form .name_field span{
+    word-wrap: break-word;
+    display: block;
+    left: 0;
+    bottom: 0;
+    top:0
+}
+.form .field span i{
+    font-size: 1.2em;
+    padding: 0;
+    cursor: pointer;
+
+}
+.form select{
+    margin-left: -1em !important;
+    direction: rtl !important;
+    padding-right: 1em !important;
+    font-size: 0.9em;
+}
+.form input ,.form select{
+    padding: 0.5em 1em;
+    margin:0.5em  1em;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #c7c4c4;
+    border-radius: 4px ;
+    direction: ltr
+}
+.form input[type="file"]{
+    border: none;
+    direction: rtl
+}
+.form ::-webkit-input-placeholder{
+    font-size: 1em;
+}
+.form .submit{
+text-align: center;
+padding: 0.9em;
+display: flex;
+justify-content: center;
+align-items: center
+}
+.form .submit a{
+    padding: 0.9em;
+    font-size: 1em;
+    color: #00d9ff;
+    text-decoration: none;
+}
+.form button.submit_sign{
+    padding: 0.3em 1em;
+    font-size: 1em;
+    background-color: #e8df09;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em
+}
+.form button.submit_sign:hover{
+    background-color: coral;
+    transition: 0.5s
+}
+.form .addField{
+display:block;
+padding: 1em;
+}
+.form .addField button{
+    padding: .9em;
+    margin: 0.5em;
+    border: none;
+    border-radius: 50%;
+    font-size: 1em;
+    display: inline-flex;
+    background: none;
+}
+.form .addField button i{
+    color: #b71818;
+    font-size: 1.5em;
+    font-weight: bold
+}
+.head{
+    display: flex;
+    justify-content: center;
+    height: 6em;
+    align-items: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+}
+.search input{
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #c7c4c4;
+    width: 450px;
+}
+.list_prescription{
+    border: 1px solid #b3b1b1;
+    border-radius: 4px;
+    text-align: right;
+    direction: rtl;
+    cursor: pointer;
+}
+.list_prescription .prField{
+    direction: rtl;
+    text-align: right;
+    display: inline-table;
+    padding: 0.5em;
+}
+.list_prescription .prField h4{
+    color: #5f5d5d
+}
+.list_prescription .prField label{
+    font-size: 1.1em
+}
+.list_prescription .prField span{
+    color: #464646;
+    font-size: 0.9em;
+}
+.list_prescription .prField .result{
+    display: flex;
+}
+.list_prescription .EditAndDelete button{
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    margin: 0 1em;
+    width: 5em;
+    text-align: center;
+}
+.new{
+    padding: 1em;
+    text-align: center;
+    font-size: 1.1em;
+}
+.new a{
+    text-decoration: none
+}
+.prField label,.prField span{
+    padding:0 0.5em
+}
+.back{
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back a{
+    font-size: 1.1em;
+    color: #464646;
+    text-decoration: none
+}
+.back a i{
+    padding: 0.5em;
+    font-size: 1.3em;
+}
+  .prescription{
+    border:1px solid #bdb9b9;
+    border-radius: 5px ;
+    direction: rtl;
+    text-align: right;
+    background-color: rgb(220, 220, 220)
+  }
+  .prescription .field_prescription{
+    margin: 0.5em 0;
+    padding: 1em 0.5em;
+  }
+  .prescription .field_prescription label{
+    font-size: 1.1em;
+    color: #000;
+    font-weight: bolder;
+  }
+  .prescription .field_prescription p{
+    display: inline;
+    margin: 0.5em;
+    color: #424242
+  }
+  .prescription .description{
+      display: block;
+  }
+  .prescription .description textarea{
+    resize: auto;
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0.5em;
+    border:none
+}
+.notfound{
+    padding: 5em;
+    text-align: center;
+}
+
+.singlePres{
+    border: 1px solid #ccc9c9;
+    direction: rtl;
+    text-align: right;
+    border-radius: 4px;
+}
+.singlePres .detail{
+    padding: 1em
+}
+.singlePres .detail h3 , .singlePres .detail h4{
+    text-align: center;
+    color: #9c9696;
+    font-size: 1.5em;
+}
+.singlePres .field_singlepr{
+    margin: 0.5em
+}
+.singlePres .field_singlepr .tests:nth-child(even) , .singlePres .field_singlepr .result:nth-child(even){
+    border-left:1px solid #988383;
+    border-right: 1px solid #988383 
+}
+.singlePres .result .singleItem input , textarea{
+    padding: 0.1em;
+    margin: 0.5em;
+    width: 100%;
+    border-radius: 5px;
+    border:1px solid #c7bfbf;
+    font-family: inherit;
+} 
+.singlePres .result .Item_field{
+    padding: 0.5em
+}
+.singlePres .result .Item_field input{
+    margin: 0.2em;
+    border-radius: 4px;
+    border:1px solid #8e8d8d;
+    padding: 0.2em;
+    font-family: auto
+}
+.singlePres .result label{
+    font-size: 1em
+}
+.singlePres .addItems button{
+    border: none;
+    border-radius: 50%;
+    background: none;
+    font-size: 1.5em;
+}
+.singlePres .addItems button i{
+    color: #b70707
+}
+.detail label{
+    padding: 0.3em;
+    color: #2448ca;
+    font-size: 1.1em;
+}
+.detail span{
+    color: #7b7979;
+    padding: 0.3em;
+    font-size: .9em
+}
+.singlePres .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em
+}
+.singlePres .submit button{
+    border: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: #e8dd0b;
+    margin: 1em;
+    width: 7em;
+}
+.lab_date{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lab_date input{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    border: 1px solid #8e8d8d;
+    border-radius: 4px;
+    padding: 0.3em;
+}
+.logout{
+    text-align: center
+}
+.logout span{
+    cursor: pointer;
+}
+  .none{
+      display: none !important;
+  }
+  .sidebar{
+    border: none;
+    height: 100vh;
+    background-color: rgba(51, 50, 50, 0.91);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+}
+.sidebar .field{
+    text-align: right;
+    /* color: #fff; */
+    background-color: #888080;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4em;
+}
+.sidebar .field:hover{
+    box-shadow: 0px 0px 5px #a9a2a2;
+    background-color: #76b6b6;
+}
+.sidebar .field.change{
+    background-color: #52a2a9 !important;
+}
+.sidebar .field label , .sidebar .field a{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5em;
+    padding:0.5em 0.5em 0.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar .field label i , .sidebar .field a i{
+    padding: 0 0.5em
+}
+.Toggle{
+    display: none
+}
+.icon{
+    width: 2em;
+    height: 0.3em;
+    background-color: #565656;
+    margin: 0.2em 0;
+    opacity: 1 !important;
+}
+.icon.open:nth-child(even){
+    opacity: 0 !important;
+    transition: 0.1s
+}
+.icon.close:nth-child(odd){
+    position: absolute;
+    top: 0;
+    transition: 0.6s;
+    height: 0.2em !important;
+}
+.icon.close:nth-child(1){
+    transform: rotate(45deg);
+}
+.icon.close:nth-child(3){
+    transform: rotate(-45deg);
+}
+.closemenu , .checkmenu{
+    display: block !important;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    transition: 0.45s
+}
+@media only screen and (max-width: 797px){
+    ::-webkit-input-placeholder{
+        font-size: 0.7em !important;
+    }
+    .login_field ::-webkit-input-placeholder{
+        text-align: left
+    }
+    .form .field label{
+        font-size: 0.8em
+    }
+.form div select , .form .field.lab .searchLab ,.search input,.form .field.name .searchname{
+        width: 100%;
+     }
+     .singlePres .field_singlepr .tests,.singlePres .field_singlepr .result{
+         border: none !important;
+        border-bottom: 1px solid #988383 !important;
+        padding: 1em 0.5em;
+     }
+.sidebar{
+    display: none;
+     }
+    .Toggle{
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 1em;
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "page-login",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "font-awesome": "^4.7.0",
+    "jalali-moment": "^3.3.3",
+    "js-cookie": "^2.2.1",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-datepicker": "^2.9.6",
+    "react-dom": "^16.3.2",
+    "react-drag-and-drop": "^2.4.0",
+    "react-html5video": "^2.5.1",
+    "react-loading": "^2.0.3",
+    "react-loading-screen": "0.0.17",
+    "react-player-controls": "^0.5.20",
+    "react-prism": "^4.3.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-show-more": "^2.0.0",
+    "react-show-more-text": "^1.0.3",
+    "react-videoplayer": "^0.6.4",
+    "react.video": "^1.0.14",
+    "reactstrap": "^6.3.1",
+    "redux": "^4.0.0",
+    "video-react": "^0.13.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

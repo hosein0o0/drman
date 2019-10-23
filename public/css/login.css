@@ -1,0 +1,13 @@
+form.login{
+    margin: 1em
+}
+form.login tr{
+    display: inline;
+    font-size: 1.1em
+}
+form.login tr input{
+    padding: 0.5em 1em;
+    margin:0.5em  1em;
+    text-align: center;
+    width: 400px
+}
